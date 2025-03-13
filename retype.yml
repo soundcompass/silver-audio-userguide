@@ -1,0 +1,42 @@
+site:
+  name: Silver Audio User Guide
+  logo: static/sa_logo-transparent-regular.png
+  githubUrl: https://github.com/YOUR-USERNAME/silver-audio-docs
+  url: https://silveraudio.io
+  sorting: descending 
+
+navigation:
+    - text: Welcome to Silver Audio
+      link: /index
+    - text: Your Catalog 
+      link: /catalog
+    - text: Project View 
+      link: /project-view
+    - text: Feedback View
+      link: /feedback-view
+    - text: Adding Audio to the Catalog
+      link: /adding-audio
+    - text: Playing Audio
+      link: /playing-audio
+    - text: Collaborating & Permissions 
+      link: /collaborating
+    - text: Creating & Managing Comments
+      link: /comments
+    - text: Track & Version Guides 
+      link: /guides
+    - text: Reporting Issues
+      link: /reporting-issues
+    - text: Glossary
+      link: /glossary
+
+branding: 
+  title: Silver Audio
+  logo: static/sa_logo-transparent-inverse.png
+  logoDark: static/sa_logo-transparent-regular.png
+  label: UserGuide
+
+footer:
+  copyright: " &copy; [Silver Audio](https://www.silveraudio.io) 2025. All rights reserved."
+  authors:
+    - name: Silver Audio
+      email: help@silveraudio.com 
