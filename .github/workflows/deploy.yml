@@ -1,7 +1,29 @@
-name: Enable Actions
-on: [push]
+name: Deploy Retype Docs
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
-  test:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - run: echo "GitHub Actions is enabled!"
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Retype
+        run: |
+          npm install -g retypeapp
+
+      - name: Build Retype Site
+        run: |
+          retype build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: public
+          token: ${{ secrets.GITHUB_TOKEN }}
