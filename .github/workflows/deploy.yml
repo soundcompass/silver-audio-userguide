@@ -19,7 +19,7 @@ jobs:
 
       - name: Build Retype Site
         run: |
-          retype build
+          retype build --output public  # Ensures Retype builds to 'public/'
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
